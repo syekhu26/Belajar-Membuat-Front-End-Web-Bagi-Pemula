@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="head_bar">
+            <h1 class="head_bar_title">Bookshelf Apps</h1>
+        </header>
+        <main>
+            <div class="form-container">
+                <h2 class="title">Tambah Buku Baru</h2>
+                <form id="formDataBuku" action="" method="post">
+                    <div class="from">
+                        <label for="judul">Judul</label>
+                        <input type="text" name="judul" id="judul" placeholder="">
+                    </div>
+                    <div class="from">
+                        <label for="penulis">Penulis</label>
+                        <input type="text" name="penulis" id="penulis" placeholder="">
+                    </div>
+                    <div class="from">
+                        <label for="tahun">Tahun</label>
+                        <input type="number" name="tahun" id="tahun" placeholder="">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="isRead" id="isRead" placeholder="">
+                        <label for="isRead">Sudah selesai dibaca</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Simpan</button>
+                </form>
+            </div>
+            <div class="cari-container">
+                <h2 class="title">Cari Buku</h2>
+                <form id="formSearch" action="" method="post">
+                    <div class="from">
+                        <input type="text" name="pencarian" id="pencarian" placeholder="">
+                    </div>
+                    <div class="form-search-bottom">
+                        <button type="reset" class="reset-btn"><i class='bx bx-reset'></i></button>
+                        <button type="submit" class="cari-btn"><i class='bx bx-search-alt-2'></i></button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="container">
+                <h2 class="title">Buku Belum Dibaca</h2>
+                <div id="belumDibaca">
+                </div>
+            </div>
+            <div class="container">
+            <h2 class="title">Buku Sudah Dibaca</h2>
+                <div id="sudahDibaca">
+                </div>
+            </div>  
+        </div>
+    </main>
+    <footer>
+        <div class="footer"> <small>Copyright &copy; 2022 - Syekhuna </small></div>
+    </footer>
+    <script src="asset/js/javascript.js"></script>
+</body>
+
+</html>
