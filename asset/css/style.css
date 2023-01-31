@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-image: url('../img/perpus.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.head_bar {
+  background-color: #0b0ff0;
+  color: #212020;
+}
+
+main {
+  max-width: 500px;
+  width: 80%;
+  margin: 30px auto;
+  padding: 16px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.form-container,
+.cari-container,
+.container {
+  padding: 3rem;
+  background: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 8px #28224b41;
+  margin-top: 35px;
+  border: 5px solid #0b0ff0;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.cari-container {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.from {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.from input {
+  border: 1px solid #6579a5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-search-bottom {
+  display: flex;
+  justify-content: end;
+  gap: 0.25rem;
+}
+
+.submit-btn {
+  border: none;
+  outline: none;
+  background-color: #e90a0a;
+  color: #fff;
+  font-weight: 600;
+  float: right;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.form-check label {
+  color: #0eda0e;
+}
+
+.form-check input,
+.form-check label {
+  cursor: pointer;
+}
+
+.item {
+  border: 1px solid #6579a5;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.item-title {
+  color: #0b0ff0;
+}
+
+.item-title span {
+  color:  #3d4963;
+}
+
+.item-action {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.hapus-btn,
+.selesai-btn,
+.kembalikan-btn,
+.reset-btn,
+.cari-btn {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.cari-btn {
+  background-color: #0b0ff0;
+}
+
+.reset-btn {
+  background-color: #6579a5;
+}
+
+.hapus-btn {
+  background-color: #ef4444;
+}
+
+.selesai-btn {
+  background-color: #22c55e;
+}
+
+.kembalikan-btn {
+  background-color: #facc15;
+}
+
+.alert {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  z-index: 100;
+  background-color: #22c55e;
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  padding: 20px;
+  color: #fffefe;
+  background-color: #0b0ff0;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 572px) {
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+}
